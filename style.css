@@ -1,0 +1,166 @@
+/* Thiết lập chung */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f7f6; /* Màu nền nhẹ nhàng */
+    color: #333;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: #ffffff;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+}
+
+/* Header - Phong cách CEO */
+header {
+    text-align: center;
+    padding-bottom: 20px;
+    border-bottom: 3px solid #004d40; /* Màu Xanh Navy đậm - Thể hiện sự chuyên nghiệp */
+    margin-bottom: 30px;
+}
+
+header h1 {
+    color: #004d40; 
+    font-size: 2.2em;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.subtitle {
+    color: #666;
+    font-size: 1.1em;
+    font-style: italic;
+}
+
+/* Bảng Theo dõi (Performance Tracker) */
+.tracker-table h2 {
+    color: #1a73e8; /* Màu xanh dương hiện đại */
+    font-size: 1.5em;
+    margin-top: 0;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+
+.date-info {
+    font-size: 1.1em;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #555;
+}
+
+#performance-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 30px;
+}
+
+#performance-table th, #performance-table td {
+    border: 1px solid #ddd;
+    padding: 15px;
+    text-align: left;
+}
+
+#performance-table th {
+    background-color: #eaf1fb; /* Nền nhẹ cho tiêu đề */
+    color: #004d40;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+/* Checkbox (Ô tick) */
+.checkbox-container {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+input[type="checkbox"] {
+    /* Ẩn checkbox mặc định */
+    appearance: none;
+    -webkit-appearance: none;
+    width: 25px;
+    height: 25px;
+    border: 2px solid #1a73e8;
+    border-radius: 4px;
+    cursor: pointer;
+    position: relative;
+    transition: all 0.2s ease;
+}
+
+input[type="checkbox"]:checked {
+    background-color: #1a73e8;
+    border-color: #1a73e8;
+}
+
+input[type="checkbox"]:checked::after {
+    /* Dấu tick tùy chỉnh */
+    content: '\f00c'; /* Icon checkmark từ Font Awesome */
+    font-family: 'Font Awesome 6 Free';
+    font-weight: 900;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 16px;
+}
+
+/* Khu vực Tóm Tắt (Summary Box) */
+.summary-box {
+    text-align: center;
+    padding: 20px;
+    background-color: #fff8e1; /* Màu vàng nhạt cho nổi bật */
+    border: 1px solid #ffeb3b;
+    border-radius: 8px;
+}
+
+.score-display p {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #004d40;
+}
+
+#total-score {
+    color: #ff9800; /* Màu cam/vàng đồng */
+    font-size: 1.8em;
+}
+
+/* Feedback Message (Phản hồi) */
+.feedback-message {
+    padding: 15px;
+    margin-top: 15px;
+    font-size: 1.2em;
+    font-weight: 700;
+    border-radius: 6px;
+    min-height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    transition: all 0.5s ease;
+}
+
+/* Các trạng thái phản hồi */
+.feedback-success {
+    background-color: #e8f5e9;
+    color: #388e3c; /* Màu Xanh Lục */
+    border: 2px solid #388e3c;
+}
+
+.feedback-good {
+    background-color: #e3f2fd;
+    color: #1976d2; /* Màu Xanh Dương */
+    border: 2px solid #1976d2;
+}
+
+.feedback-retry {
+    background-color: #ffcdd2;
+    color: #d32f2f; /* Màu Đỏ */
+    border: 2px solid #d32f2f;
+}
